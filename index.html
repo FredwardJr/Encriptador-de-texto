@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/7268194.png" alt="Logo personal" class="logo">
+    </header>
+    <main>
+        <div class="contenedor1">
+            <form class="encriptador">
+                <div class  ="caja">
+                    <textarea placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="informacion">
+                        <img src="./assets/Group.png" alt="Icono advertencia">   
+                        <span>Solo letras minúsculas y sin acentos</span>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button onclick="FunEncri()" type="button" class="btn-encriptar" id="botonEncriptar">Encriptar</button>
+                    <button onclick="FunDesencri()" type="button" class="btn-encriptar" id="botonDesencritpar">Desencriptar</button>        
+                </div>
+            </form>
+        </div>
+        <div class="contenedor2">
+            <div id="textoCuadroBlanco"></div>
+            <div class="mensaje">
+                <img src="./assets/Muñeco.png" alt="Imagen de muñeco" class="muñeco">
+                <h3 class="titulo-mensaje">Ningún mensaje fue encontrado</h3>
+                <p class="descrip-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="btn-copiar" onclick="copiarEncrip()">Copiar Texto</button>
+        </div>
+    </main>
+    <footer>
+        <p>Fredy Vásquez 2024</p>
+        <div class="redes-sociales">
+            <ul>
+                <li>
+                    <a class="link_redes" href="https://www.instagram.com/fredward._/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link_redes" href="https://www.twitch.tv/fredjaks">
+                        <i class="fa-brands fa-twitch"></i>
+                </li>
+                <li>
+                    <a class="link_redes" href="https://github.com/FredwardJr">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link_redes" href="https://www.linkedin.com/in/fredy-vasquez-129825191/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html> 
